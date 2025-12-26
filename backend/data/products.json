@@ -1,0 +1,8 @@
+[
+    { "id": 1, "name": "Non", "category": "non", "price": 3000, "image": "🍞", "stock": 50, "rating": 4.5, "reviews": 23, "imageUrl": "" },
+    { "id": 2, "name": "Sut", "category": "sut", "price": 8000, "image": "🥛", "stock": 30, "rating": 4.8, "reviews": 45, "imageUrl": "" },
+    { "id": 3, "name": "Tuxum", "category": "boshqa", "price": 15000, "image": "🥚", "stock": 100, "rating": 4.6, "reviews": 67, "imageUrl": "" },
+    { "id": 4, "name": "Olma", "category": "meva", "price": 12000, "image": "🍎", "stock": 80, "rating": 4.7, "reviews": 34, "imageUrl": "" },
+    { "id": 5, "name": "Pomidor", "category": "sabzavot", "price": 9000, "image": "🍅", "stock": 60, "rating": 4.4, "reviews": 28, "imageUrl": "" },
+    { "id": 6, "name": "Guruch", "category": "don", "price": 18000, "image": "🌾", "stock": 40, "rating": 4.9, "reviews": 56, "imageUrl": "" }
+]

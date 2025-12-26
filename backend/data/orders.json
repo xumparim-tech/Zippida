@@ -1,0 +1,328 @@
+[
+  {
+    "_id": "1766697271002",
+    "items": [
+      {
+        "id": 1,
+        "name": "Non",
+        "category": "non",
+        "price": 3000,
+        "image": "🍞",
+        "stock": 50,
+        "rating": 4.5,
+        "reviews": 23,
+        "imageUrl": "",
+        "quantity": 2
+      }
+    ],
+    "total": 16000,
+    "details": {
+      "name": "asasc",
+      "phone": "csdc",
+      "address": "cdsc",
+      "promoCode": ""
+    },
+    "status": "Bekor qilindi",
+    "createdAt": "2025-12-25T21:14:31.002Z"
+  },
+  {
+    "_id": "1766698007743",
+    "items": [
+      {
+        "id": 1,
+        "name": "Non",
+        "category": "non",
+        "price": 3000,
+        "image": "🍞",
+        "stock": 50,
+        "rating": 4.5,
+        "reviews": 23,
+        "imageUrl": "",
+        "quantity": 2
+      },
+      {
+        "id": 6,
+        "name": "Guruch",
+        "category": "don",
+        "price": 18000,
+        "image": "🌾",
+        "stock": 40,
+        "rating": 4.9,
+        "reviews": 56,
+        "imageUrl": "",
+        "quantity": 5
+      }
+    ],
+    "total": 96000,
+    "details": {
+      "name": "zari",
+      "phone": "0346",
+      "address": "asaka",
+      "promoCode": "",
+      "paymentMethod": "card"
+    },
+    "status": "Yetkazildi",
+    "date": "26.12.2025, 02:26:47",
+    "createdAt": "2025-12-25T21:26:47.743Z"
+  },
+  {
+    "_id": "1766698021394",
+    "items": [
+      {
+        "id": 3,
+        "name": "Tuxum",
+        "category": "boshqa",
+        "price": 15000,
+        "image": "🥚",
+        "stock": 100,
+        "rating": 4.6,
+        "reviews": 67,
+        "imageUrl": "",
+        "quantity": 5
+      }
+    ],
+    "total": 75000,
+    "details": {
+      "name": "zari",
+      "phone": "0346",
+      "address": "asaka",
+      "promoCode": "",
+      "paymentMethod": "cash"
+    },
+    "status": "Yetkazildi",
+    "date": "26.12.2025, 02:27:01",
+    "createdAt": "2025-12-25T21:27:01.394Z"
+  },
+  {
+    "_id": "1766698084667",
+    "items": [
+      {
+        "id": 3,
+        "name": "Tuxum",
+        "category": "boshqa",
+        "price": 15000,
+        "image": "🥚",
+        "stock": 100,
+        "rating": 4.6,
+        "reviews": 67,
+        "imageUrl": "",
+        "quantity": 4
+      }
+    ],
+    "total": 60000,
+    "details": {
+      "name": "zari",
+      "phone": "0346",
+      "address": "asaka",
+      "promoCode": "",
+      "paymentMethod": "cash"
+    },
+    "status": "Bekor qilindi",
+    "date": "26.12.2025, 02:28:04",
+    "createdAt": "2025-12-25T21:28:04.667Z"
+  },
+  {
+    "_id": "1766698126697",
+    "items": [
+      {
+        "id": 3,
+        "name": "Tuxum",
+        "category": "boshqa",
+        "price": 15000,
+        "image": "🥚",
+        "stock": 100,
+        "rating": 4.6,
+        "reviews": 67,
+        "imageUrl": "",
+        "quantity": 2
+      }
+    ],
+    "total": 40000,
+    "details": {
+      "name": "zarisaccass",
+      "phone": "0346cascsa",
+      "address": "asaka",
+      "promoCode": "",
+      "paymentMethod": "cash"
+    },
+    "status": "Bekor qilindi",
+    "date": "26.12.2025, 02:28:46",
+    "createdAt": "2025-12-25T21:28:46.697Z"
+  },
+  {
+    "_id": "1766698317076",
+    "userId": "1766697256188",
+    "items": [
+      {
+        "id": 2,
+        "name": "Sut",
+        "category": "sut",
+        "price": 8000,
+        "image": "🥛",
+        "stock": 30,
+        "rating": 4.8,
+        "reviews": 45,
+        "imageUrl": "",
+        "quantity": 6
+      }
+    ],
+    "total": 58000,
+    "details": {
+      "name": "zarisaccass",
+      "phone": "0346cascsa",
+      "address": "asaka",
+      "promoCode": "",
+      "paymentMethod": "cash"
+    },
+    "status": "Bekor qilindi",
+    "date": "26.12.2025, 02:31:57",
+    "createdAt": "2025-12-25T21:31:57.076Z"
+  },
+  {
+    "_id": "1766698345805",
+    "userId": "1766697256188",
+    "items": [
+      {
+        "id": 3,
+        "name": "Tuxum",
+        "category": "boshqa",
+        "price": 15000,
+        "image": "🥚",
+        "stock": 100,
+        "rating": 4.6,
+        "reviews": 67,
+        "imageUrl": "",
+        "quantity": 1
+      }
+    ],
+    "total": 25000,
+    "details": {
+      "name": "zarisaccass",
+      "phone": "+998912345678",
+      "address": "asaka",
+      "promoCode": "",
+      "paymentMethod": "card"
+    },
+    "status": "Bekor qilindi",
+    "date": "26.12.2025, 02:32:25",
+    "createdAt": "2025-12-25T21:32:25.805Z"
+  },
+  {
+    "_id": "1766698455329",
+    "userId": "1766697256188",
+    "items": [
+      {
+        "id": 3,
+        "name": "Tuxum",
+        "category": "boshqa",
+        "price": 15000,
+        "image": "🥚",
+        "stock": 100,
+        "rating": 4.6,
+        "reviews": 67,
+        "imageUrl": "",
+        "quantity": 4
+      },
+      {
+        "id": 4,
+        "name": "Olma",
+        "category": "meva",
+        "price": 12000,
+        "image": "🍎",
+        "stock": 80,
+        "rating": 4.7,
+        "reviews": 34,
+        "imageUrl": "",
+        "quantity": 3
+      }
+    ],
+    "total": 96000,
+    "details": {
+      "name": "zarisaccass",
+      "phone": "+998912345678",
+      "address": "asaka",
+      "promoCode": "",
+      "paymentMethod": "card"
+    },
+    "status": "Yetkazildi",
+    "date": "26.12.2025, 02:34:15",
+    "createdAt": "2025-12-25T21:34:15.329Z"
+  },
+  {
+    "_id": "1766698482816",
+    "userId": "1766697256188",
+    "items": [
+      {
+        "id": 2,
+        "name": "Sut",
+        "category": "sut",
+        "price": 8000,
+        "image": "🥛",
+        "stock": 30,
+        "rating": 4.8,
+        "reviews": 45,
+        "imageUrl": "",
+        "quantity": 1
+      },
+      {
+        "id": 1,
+        "name": "Non",
+        "category": "non",
+        "price": 3000,
+        "image": "🍞",
+        "stock": 50,
+        "rating": 4.5,
+        "reviews": 23,
+        "imageUrl": "",
+        "quantity": 1
+      },
+      {
+        "id": 5,
+        "name": "Pomidor",
+        "category": "sabzavot",
+        "price": 9000,
+        "image": "🍅",
+        "stock": 60,
+        "rating": 4.4,
+        "reviews": 28,
+        "imageUrl": "",
+        "quantity": 1
+      },
+      {
+        "id": 6,
+        "name": "Guruch",
+        "category": "don",
+        "price": 18000,
+        "image": "🌾",
+        "stock": 40,
+        "rating": 4.9,
+        "reviews": 56,
+        "imageUrl": "",
+        "quantity": 1
+      },
+      {
+        "id": 3,
+        "name": "Tuxum",
+        "category": "boshqa",
+        "price": 15000,
+        "image": "🥚",
+        "stock": 100,
+        "rating": 4.6,
+        "reviews": 67,
+        "imageUrl": "",
+        "quantity": 1
+      }
+    ],
+    "total": 53000,
+    "details": {
+      "name": "zarisaccass",
+      "phone": "+998912345678",
+      "address": "asaka",
+      "promoCode": "",
+      "paymentMethod": "cash"
+    },
+    "status": "Yetkazildi",
+    "date": "26.12.2025, 02:34:42",
+    "createdAt": "2025-12-25T21:34:42.816Z"
+  }
+]

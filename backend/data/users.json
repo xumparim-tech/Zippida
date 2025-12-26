@@ -1,0 +1,18 @@
+[
+  {
+    "_id": "admin_manual_1766696640016",
+    "name": "Admin",
+    "phone": "+998901234567",
+    "password": "$2b$10$x9KLGl0DtjeOY2yVqZz7BeoP3PI5vmdyZbH0QxevNu0/QmEWvODLW",
+    "isAdmin": true,
+    "createdAt": "2025-12-25T21:04:00.016Z"
+  },
+  {
+    "_id": "1766697256188",
+    "name": "cskdc;sd",
+    "phone": "+998912345678",
+    "password": "$2b$10$IC7quHH5ZwNbUa6OMn.2s.9HzRNwuG/o1AunlDAbYm9809iV.aNAq",
+    "isAdmin": false,
+    "createdAt": "2025-12-25T21:14:16.188Z"
+  }
+]
