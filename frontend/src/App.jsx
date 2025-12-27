@@ -223,7 +223,13 @@ const App = () => {
                 stock: parseInt(newProduct.stock),
                 imageUrl: newProduct.imageUrl
             };
-            const res = await api.post('/products', productPayload);
+
+            const token = user?.token;
+            const config = {
+                headers: { Authorization: `Bearer ${token}` }
+            };
+
+            const res = await api.post('/products', productPayload, config);
             setProducts([...products, res.data]);
             setNewProduct({ name: '', category: 'non', price: '', image: '📦', stock: '', imageUrl: '' });
             setError('');
@@ -237,7 +243,11 @@ const App = () => {
 
     const deleteProduct = async (id) => {
         try {
-            await api.delete(`/products/${id}`);
+            const token = user?.token;
+            const config = {
+                headers: { Authorization: `Bearer ${token}` }
+            };
+            await api.delete(`/products/${id}`, config);
             setProducts(products.filter(p => p.id !== id));
         } catch (err) {
             console.error(err);
