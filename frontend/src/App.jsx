@@ -82,10 +82,10 @@ const App = () => {
     };
 
     const addToCart = (product) => {
-        const existing = cart.find(item => item.id === product.id);
+        const existing = cart.find(item => item._id === product._id);
         if (existing) {
             setCart(cart.map(item =>
-                item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+                item._id === product._id ? { ...item, quantity: item.quantity + 1 } : item
             ));
         } else {
             setCart([...cart, { ...product, quantity: 1 }]);
@@ -93,12 +93,12 @@ const App = () => {
     };
 
     const updateQuantity = (id, delta) => {
-        const item = cart.find(item => item.id === id);
+        const item = cart.find(item => item._id === id);
         if (item && item.quantity + delta <= 0) {
-            setCart(cart.filter(item => item.id !== id));
+            setCart(cart.filter(item => item._id !== id));
         } else {
             setCart(cart.map(item => {
-                if (item.id === id) {
+                if (item._id === id) {
                     return { ...item, quantity: item.quantity + delta };
                 }
                 return item;
@@ -107,7 +107,7 @@ const App = () => {
     };
 
     const removeFromCart = (id) => {
-        setCart(cart.filter(item => item.id !== id));
+        setCart(cart.filter(item => item._id !== id));
     };
 
     const toggleFavorite = (productId) => {
@@ -248,7 +248,7 @@ const App = () => {
                 headers: { Authorization: `Bearer ${token}` }
             };
             await api.delete(`/products/${id}`, config);
-            setProducts(products.filter(p => p.id !== id));
+            setProducts(products.filter(p => p._id !== id));
         } catch (err) {
             console.error(err);
             setError("O'chirishda xatolik!");
@@ -341,11 +341,11 @@ const App = () => {
             )}
 
             <header className="bg-gradient-to-r from-purple-600 to-pink-600 text-white sticky top-0 z-40 shadow-lg">
-                <div className="container mx-auto px-4 py-3">
-                    <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-3">
-                            <button onClick={() => setView('shop')} className="focus:outline-none">
-                                <img src="/logo.png" alt="Zippida" className="h-28 md:h-36 w-auto object-contain transition-transform hover:scale-105" />
+                <div className="container mx-auto px-4">
+                    <div className="flex items-center justify-between h-20 md:h-24">
+                        <div className="flex items-center gap-3 h-full py-2">
+                            <button onClick={() => setView('shop')} className="focus:outline-none h-full flex items-center">
+                                <img src="/logo.png" alt="Zippida" className="h-28 md:h-44 w-auto object-contain transition-transform hover:scale-105 drop-shadow-md" />
                             </button>
                         </div>
                         <div className="flex gap-2 items-center">
@@ -420,9 +420,9 @@ const App = () => {
 
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
                         {sortedProducts.map(product => (
-                            <div key={product.id} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition relative group">
-                                <button onClick={() => toggleFavorite(product.id)} className="absolute top-2 right-2 z-10 bg-white p-2 rounded-full shadow-md hover:scale-110 transition opacity-0 group-hover:opacity-100">
-                                    <Heart className={`w-5 h-5 ${favorites.includes(product.id) ? 'fill-red-500 text-red-500' : 'text-gray-400'}`} />
+                            <div key={product._id} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition relative group">
+                                <button onClick={() => toggleFavorite(product._id)} className="absolute top-2 right-2 z-10 bg-white p-2 rounded-full shadow-md hover:scale-110 transition opacity-0 group-hover:opacity-100">
+                                    <Heart className={`w-5 h-5 ${favorites.includes(product._id) ? 'fill-red-500 text-red-500' : 'text-gray-400'}`} />
                                 </button>
                                 <div className="text-4xl md:text-6xl text-center py-4 md:py-6 bg-gradient-to-br from-purple-50 to-pink-50 cursor-pointer" onClick={() => { setSelectedProduct(product); setShowReviews(true); }}>
                                     {product.imageUrl ? <img src={product.imageUrl} alt={product.name} className="w-full h-32 md:h-40 object-cover" /> : product.image}
@@ -438,11 +438,11 @@ const App = () => {
                                             <span className="text-lg md:text-xl font-bold text-purple-600 block">{product.price.toLocaleString()}</span>
                                             <span className="text-xs text-gray-500">so'm</span>
                                         </div>
-                                        {cart.find(item => item.id === product.id) ? (
+                                        {cart.find(item => item._id === product._id) ? (
                                             <div className="flex items-center gap-1 bg-purple-600 text-white rounded-lg px-2 py-1">
-                                                <button onClick={() => updateQuantity(product.id, -1)} className="hover:bg-purple-700 p-1 rounded"><Minus className="w-3 h-3 md:w-4 md:h-4" /></button>
-                                                <span className="font-bold min-w-[20px] text-center text-sm">{cart.find(item => item.id === product.id).quantity}</span>
-                                                <button onClick={() => updateQuantity(product.id, 1)} className="hover:bg-purple-700 p-1 rounded"><Plus className="w-3 h-3 md:w-4 md:h-4" /></button>
+                                                <button onClick={() => updateQuantity(product._id, -1)} className="hover:bg-purple-700 p-1 rounded"><Minus className="w-3 h-3 md:w-4 md:h-4" /></button>
+                                                <span className="font-bold min-w-[20px] text-center text-sm">{cart.find(item => item._id === product._id).quantity}</span>
+                                                <button onClick={() => updateQuantity(product._id, 1)} className="hover:bg-purple-700 p-1 rounded"><Plus className="w-3 h-3 md:w-4 md:h-4" /></button>
                                             </div>
                                         ) : (
                                             <button onClick={() => addToCart(product)} className="bg-purple-600 text-white p-2 rounded-lg hover:bg-purple-700 transition"><Plus className="w-4 h-4 md:w-5 md:h-5" /></button>
@@ -461,8 +461,8 @@ const App = () => {
                 <div className="container mx-auto px-4 py-6">
                     <h2 className="text-2xl font-bold mb-4">Sevimlilar</h2>
                      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                        {products.filter(p => favorites.includes(p.id)).map(product => (
-                            <div key={product.id} className="bg-white rounded-xl shadow-md p-4">
+                        {products.filter(p => favorites.includes(p._id)).map(product => (
+                            <div key={product._id} className="bg-white rounded-xl shadow-md p-4">
                                 <h3 className="font-bold">{product.name}</h3>
                                 <p>{product.price.toLocaleString()} so'm</p>
                                 <button onClick={() => addToCart(product)} className="mt-2 text-purple-600">Savatga</button>
@@ -480,7 +480,7 @@ const App = () => {
                          <div className="grid lg:grid-cols-3 gap-6">
                              <div className="lg:col-span-2 bg-white rounded-xl shadow p-6">
                                  {cart.map(item => (
-                                     <div key={item.id} className="flex justify-between items-center border-b py-2">
+                                     <div key={item._id} className="flex justify-between items-center border-b py-2">
                                          <div>{item.name} x {item.quantity}</div>
                                          <div>{(item.price * item.quantity).toLocaleString()} so'm</div>
                                      </div>
@@ -519,9 +519,9 @@ const App = () => {
                 <div className="container mx-auto px-4 py-6">
                     <h2 className="text-2xl font-bold mb-4">Buyurtmalar</h2>
                     {orders.map(order => (
-                        <div key={order.id} className="bg-white rounded-xl shadow p-4 mb-4">
+                        <div key={order._id || order.id} className="bg-white rounded-xl shadow p-4 mb-4">
                             <div className="flex justify-between font-bold">
-                                <span>Buyurtma #{order.id}</span>
+                                <span>Buyurtma #{order._id || order.id}</span>
                                 <span>{order.total.toLocaleString()} so'm</span>
                             </div>
                             <div className="text-sm text-gray-500">{order.status}</div>
